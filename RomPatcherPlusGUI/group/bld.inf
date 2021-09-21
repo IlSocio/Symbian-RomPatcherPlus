@@ -1,0 +1,12 @@
+ 
+PRJ_PLATFORMS
+WINSCW GCCE
+
+PRJ_EXPORTS
+
+PRJ_MMPFILES
+
+RomPatcherPlusGUI.mmp
+
+gnumakefile icons_aif_scalable_dc.mk
+

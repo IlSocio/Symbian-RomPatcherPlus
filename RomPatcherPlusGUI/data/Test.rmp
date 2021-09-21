@@ -1,0 +1,27 @@
+
+;Test Ord
+;Author: Il.Socio
+;RomPatcher+ v2.4 or above is needed
+;
+
+#ifdef RP+VERSION_2.0
+	#define NOT_COMPATIBLE
+#endif
+
+#ifdef RP+VERSION_2.1
+	#define NOT_COMPATIBLE
+#endif
+
+#ifdef RP+VERSION_2.2
+	#define NOT_COMPATIBLE
+#endif
+
+#ifdef RP+VERSION_2.3
+	#define NOT_COMPATIBLE
+#endif
+
+#ifdef NOT_COMPATIBLE
+	error:Please update to RP+ v2.4 or above to use this patch!
+#else
+	ord_rel:1:sys\bin\3GPMP4LIB.DLL:0:????????:11223344
+#endif

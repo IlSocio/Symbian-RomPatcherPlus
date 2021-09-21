@@ -1,0 +1,7 @@
+; RomPatcher+ Disable Capabilities Patch
+; Thanks to FCA00000 for superpage and capabilities informations
+;
+; This patch will ATTEMPT to disable the capabilities.
+; You will get red icon if the capabilities are already disabled, or if your model is not supported.
+;
++superpage:148:1e:10

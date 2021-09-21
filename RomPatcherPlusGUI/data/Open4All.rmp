@@ -1,0 +1,12 @@
+
+; *** Patch: Open4All ***
+; Author: wadowice
+; Date: 29-Jan-09
+;
+; This patch open branch c:\sys\bin for all file navigators.
+; Must hack your handy by use of DeltaFoX mehod.
+; Must install ROMpatcher and then copy this patch-file at e:\patches\Open4All.rmp
+; Runs ROMpatcher and Apply
+; MODO not useful now.
+; Thank-you to WiTch3d, DeltaFoX, Zorn, FCA00000
+SnR:sys\bin\efile.exe:5C005200DFFFDFFF450053004F0055005200430045005C00DFFF00005C00500052004900:2000520020FF20FF200053004F0055005200430045005C00DFFF00005C00200022002900

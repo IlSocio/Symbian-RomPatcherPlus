@@ -1,0 +1,28 @@
+﻿
+; This is just a Demo Patch to show the new commands that will be introduced in the next RP+ version
+; Check here for Language values: http://wiki.forum.nokia.com/index.php/TLanguage_enumeration
+
+info:RP+ supports also Unicode text, just save the patch file as UTF-8
+
+#IFDEF LANG_4
+	; Spanish Language
+	info:Leer el archivo ReadMe_Macros.txt
+	return:
+#ENDIF
+
+#IFDEF LANG_5
+	; Italian Language
+	info:Leggi il file ReadMe_Macros.txt
+	return:
+#ENDIF
+
+#IFDEF LANG_16
+	; Russian Language
+	info:Прочтите файл ReadMe_Macros.txt
+	return:
+#ENDIF
+
+
+; Default Language
+info:Read the ReadMe_Macros.txt file	
+

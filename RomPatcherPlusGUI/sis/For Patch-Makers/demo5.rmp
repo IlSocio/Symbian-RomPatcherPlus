@@ -1,0 +1,29 @@
+﻿
+; To run this patch RomPatcher+ v2.3 or above is needed
+;
+
+#ifdef RP+VERSION_2.0
+	#define NOT_COMPATIBLE
+#endif
+
+#ifdef RP+VERSION_2.1
+	#define NOT_COMPATIBLE
+#endif
+
+#ifdef RP+VERSION_2.2
+	#define NOT_COMPATIBLE
+#endif
+
+#ifdef RP+VERSION_2.3
+	#define NOT_COMPATIBLE
+#endif
+
+
+#ifdef NOT_COMPATIBLE
+	error:Please update to RP+ v2.4 or above to use this patch!
+#else
+	; your patch code goes here...
+	; your patch code goes here...
+	; your patch code goes here...
+	; your patch code goes here...
+#endif

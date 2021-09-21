@@ -1,0 +1,32 @@
+/*
+========================================================================
+ Name        : RomPatcherPlusListBox.hrh
+ Author      : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : 
+========================================================================
+*/
+enum TRomPatcherPlusListBoxViewCommands
+	{
+	ERomPatcherPlusListBoxViewApplyMenuItemCommand = 0x6000,
+	ERomPatcherPlusListBoxViewAdd_to_AutoMenuItemCommand,
+	ERomPatcherPlusListBoxViewAbout_MenuItemCommand,
+	ERomPatcherPlusListBoxViewDump_ROMMenuItemCommand,
+	ERomPatcherPlusListBoxViewDump_SuperPageMenuItemCommand,
+	ERomPatcherPlusListBoxViewSystem_InfoMenuItemCommand,
+	ERomPatcherPlusListBoxViewAbout_MenuItem1Command,
+	ERomPatcherPlusListBoxViewAdvMenuItemCommand,
+	ERomPatcherPlusListBoxViewRemove_PatchMenuItemCommand,
+	ERomPatcherPlusListBoxViewRemove_from_AutoMenuItemCommand,
+	ERomPatcherPlusListBoxViewPatch_InfoMenuItem1Command,
+	ERomPatcherPlusListBoxViewApply_All_PatchesMenuItemCommand,
+	ERomPatcherPlusListBoxViewRemove_All_PatchesMenuItemCommand,
+	ERomPatcherPlusListBoxViewUsing_PayPalMenuItemCommand,
+	ERomPatcherPlusListBoxViewUsing_CreditCardMenuItemCommand,
+	ERomPatcherPlusListBoxViewDump_Custom_AreaMenuItemCommand,
+	ERomPatcherPlusListBoxViewOverclockMenuItemCommand,
+	ERomPatcherPlusListBoxViewApplyMenuItem1Command,
+	ERomPatcherPlusListBoxViewDisableMenuItemCommand,
+	ERomPatcherPlusListBoxViewDonateMenuItemCommand,
+	ERomPatcherPlusListBoxViewAdd_to_Auto_DomainSrv_MenuItemCommand
+	};

@@ -1,0 +1,35 @@
+
+;Universal Install Server version 1.1
+;Author: Il.Socio, using wadowice's method
+;Greetings to wadowice, templove, roland, CODeRUS
+;RomPatcher+ v2.2 or above is needed
+;
+
+#ifdef RP+VERSION_2.0
+	#define NOT_COMPATIBLE
+#endif
+
+#ifdef RP+VERSION_2.1
+	#define NOT_COMPATIBLE
+#endif
+
+
+
+#ifdef NOT_COMPATIBLE
+	error:Please update to RP+ v2.2 or above to use this patch!
+#else
+	;Uncomment the line below to restore the "Grant Capabilities" dialog
+	;SnR:sys\bin\installserver.exe:0028??D0??A9??A8????????0028??D0??A9??A8:00028028??A9??A8????????00280028??A9??A8
+	#ifdef PLATFORM_5.2
+		; Symbian^3
+		SnR:sys\bin\installserver.exe:606802250100??31??31????????:606802250100??31??3100234B61
+	#else
+		; 3rd - 3rd FP1 - 3rd FP2 - 5th
+		SnR:sys\bin\installserver.exe:F02102250B58????:F021022500230B50
+	#endif
+	SnR:sys\bin\installserver.exe:0028??D0A0690521:0028??E0A0690521
+	SnR:sys\bin\installserver.exe:401C??D012:401C??E012
+	SnR:sys\bin\installserver.exe:0028??D1????14250028:0028??E0019814250028
+	SnR:sys\bin\installserver.exe:70B5060000251324:0020704700251324
+#endif
+

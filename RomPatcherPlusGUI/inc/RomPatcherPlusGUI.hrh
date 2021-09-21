@@ -1,0 +1,12 @@
+/*
+========================================================================
+ Name        : RomPatcherPlus.hrh
+ Author      : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : 
+========================================================================
+*/
+enum TRomPatcherPlusViewUids
+	{
+	ERomPatcherPlusListBoxViewId = 1
+	};

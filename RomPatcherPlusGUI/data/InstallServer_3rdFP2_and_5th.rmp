@@ -1,0 +1,14 @@
+; *** Patch: Installserver_fp2_v1.1 ***
+; Author: templove
+; Patch Complied by adidas
+; Date: 06-March-09
+;
+;v1.1 now u can install software as usual when patch is disable after applied
+;Thanks to wadowice,zorn,swmail ,fca00000 and others
+SnR:sys\bin\installserver.exe:0028F8D029A920A8:0002802829A920A8
+SnR:sys\bin\installserver.exe:002811D029A905A8:0028002829A905A8
+SnR:sys\bin\installserver.exe:0B58904E:00230B50
+SnR:sys\bin\installserver.exe:002809D0A0690521:002809E0A0690521
+SnR:sys\bin\installserver.exe:401C07D0:401C07E0
+SnR:sys\bin\installserver.exe:1CD10198:1CE00198
+SnR:sys\bin\installserver.exe:70B5060000251324:0020704700251324 

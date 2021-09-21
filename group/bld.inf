@@ -1,0 +1,5 @@
+#include <..\Install\group\bld.inf>
+#include <..\Engine\group\bld.inf>
+#include <..\Auto\group\bld.inf>
+
+PRJ_MMPFILES

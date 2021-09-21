@@ -1,0 +1,11 @@
+/*
+========================================================================
+ Name        : RomPatcherPlus.loc
+ Author      : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_01
+#include "RomPatcherPlus.l01"
+#endif

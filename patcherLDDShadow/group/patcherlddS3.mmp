@@ -1,0 +1,27 @@
+//
+// Copyright (c) 2004-2006 Symbian Software Ltd. All rights reserved.
+//
+
+
+#include "kernel/kern_ext.mmh"
+
+target			patcherS3.ldd
+targettype		LDD
+
+systeminclude	/epoc32/include/drivers
+userinclude		../inc
+
+sourcepath		../src
+source			patcherdev.cpp patcherchannel.cpp
+
+library			ekern.lib
+
+//epocallowdlldata
+
+UID 0x100000AF 0xE0008912
+capability		all
+
+
+start wins
+win32_headers
+end

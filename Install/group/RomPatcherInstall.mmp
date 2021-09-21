@@ -1,0 +1,30 @@
+/*
+============================================================================
+ Name		: RomPatcherInstall.mmp
+ Author	  : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : This is the project specification file for RomPatcherInstall.
+============================================================================
+*/
+
+TARGET		  RomPatcherInstall.exe
+TARGETTYPE	  exe
+UID			 0 0xEBB7CB5D
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  RomPatcherInstall.cpp
+
+STATICLIBRARY commonlib.lib
+
+LIBRARY		 euser.lib bafl.lib efile.lib estor.lib efsrv.lib charconv.lib
+LIBRARY	aknnotify.lib eiksrv.lib CommonEngine.lib  ezip.lib 
+LIBRARY	charconv.lib efsrv.lib bafl.lib euser.lib apgrfx.lib apmime.lib etel3rdparty.lib
+
+
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif

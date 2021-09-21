@@ -1,0 +1,47 @@
+/*
+========================================================================
+ Name        : RomPatcherPlusListBox.l01
+ Author      : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_RomPatcherPlusListBoxView_2 ""
+#define STR_RomPatcherPlusListBoxView_3 "ROMPatcher Plus"
+#define STR_RomPatcherPlusListBoxView_1 ""
+#define STR_RomPatcherPlusListBoxView_10 "Patch Info"
+#define STR_RomPatcherPlusListBoxView_11 "Advanced"
+#define STR_RomPatcherPlusListBoxView_9 "Add to Auto"
+#define STR_RomPatcherPlusListBoxView_15 "About..."
+#define STR_RomPatcherPlusListBoxView_16 "Dump ROM"
+#define STR_RomPatcherPlusListBoxView_17 "Dump SuperPage"
+#define STR_RomPatcherPlusListBoxView_18 "System Info"
+#define STR_RomPatcherPlusListBoxView_13 "item"
+#define STR_RomPatcherPlusListBoxView_14 "item"
+#define STR_RomPatcherPlusListBoxView_4 "item"
+#define STR_RomPatcherPlusListBoxView_5 "item"
+#define STR_RomPatcherPlusListBoxView_7 "item"
+#define STR_RomPatcherPlusListBoxView_12 "item"
+#define STR_RomPatcherPlusListBoxView_21 "heading"
+#define STR_RomPatcherPlusListBoxView_22 "heading"
+#define STR_RomPatcherPlusListBoxView_23 "heading"
+#define STR_RomPatcherPlusListBoxView_24 "heading"
+#define STR_RomPatcherPlusListBoxView_19 "heading"
+#define STR_RomPatcherPlusListBoxView_20 "heading"
+#define STR_RomPatcherPlusListBoxView_25 "Remove from Auto"
+#define STR_RomPatcherPlusListBoxView_30 "Using CreditCard"
+#define STR_RomPatcherPlusListBoxView_32 "item"
+#define STR_RomPatcherPlusListBoxView_33 "item"
+#define STR_RomPatcherPlusListBoxView_35 "All Patches"
+#define STR_RomPatcherPlusListBoxView_36 "Apply"
+#define STR_RomPatcherPlusListBoxView_37 "Disable"
+#define STR_RomPatcherPlusListBoxView_6 "Donate by SMS"
+#define STR_RomPatcherPlusListBoxView_8 "Add to Auto (DomainSrv)"
+#define STR_RomPatcherPlusListBoxView_31 "heading"
+#define STR_RomPatcherPlusListBoxView_34 "item"
+#define STR_RomPatcherPlusListBoxView_38 "item"
+#define STR_RomPatcherPlusListBoxView_26 "heading"
+#define STR_RomPatcherPlusListBoxView_27 "item"
+#define STR_RomPatcherPlusListBoxView_28 "heading"
+#define STR_RomPatcherPlusListBoxView_29 "item"

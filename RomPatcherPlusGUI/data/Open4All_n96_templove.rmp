@@ -1,0 +1,13 @@
+
+; *** [UPDATED] Open4All for All fp2 (n96_e90) ***
+; Author: templove
+; Patch Complied by adidas
+; Date: 07-March-09
+;
+; This patch open branch c:\sys\bin for all file navigators.
+; Must install ROMpatcher and then copy this patch-file at e:\patches\[UPDATED] Open4All for All fp2 (n96_e90) by templove.rmp
+; Runs ROMpatcher and Apply
+; Thanks to :wadowice ,WiTch3d, DeltaFoX, Zorn, FCA00000
+SnR:sys\bin\efile.exe:0100A0E31080BDE810402DE9001090E50F42C1E3040054E3:0000A0E31080BDE810402DE9001090E50F42C1E3040054E3
+SnR:sys\bin\efile.exe:0100A0E31080BDE810402DE9001090E50F42C1E3080054E3:0000A0E31080BDE810402DE9001090E50F42C1E3080054E3
+SnR:sys\bin\efile.exe:0100A0E31080BDE830402DE9:0000A0E31080BDE830402DE9 

@@ -1,0 +1,11 @@
+﻿
+;This is just a Demo Patch to show the new commands that will be introduced in the next RP+ version
+
+
+#IFDEF PLATFORM_5.0 
+	info: this is a 5th Edition Device
+#ELSE
+	info: this is NOT a 5th Edition Device
+#ENDIF
+
+

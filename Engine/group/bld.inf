@@ -1,0 +1,20 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : This file provides the information required for building the
+				whole of a RomPatcherEngine.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+WINSCW GCCE
+
+PRJ_EXPORTS
+..\inc\RomPatcherEngine.h \epoc32\include\FuzzyByte\RP\RomPatcherEngine.h
+..\inc\RP_Types.h \epoc32\include\FuzzyByte\RP\RP_Types.h
+..\inc\Data.h \epoc32\include\FuzzyByte\RP\Data.h
+
+PRJ_MMPFILES
+RomPatcherEngine.mmp

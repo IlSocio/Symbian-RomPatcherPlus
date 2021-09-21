@@ -1,0 +1,142 @@
+
+ ROMPATCHER+ v2.6 by Marco Bellino (aka Il.Socio)
+ http://www.symbian-toys.com/RomPatcherPlus.aspx
+
+
+ HISTORY
+
+v2.6
++ New: Support for compiled patches (.RPP files) Patch-Makers can now distribuite compiled patches to protect their work. Check the "For Patch-Makers" Folder.
++ Improved: Added DomainSrv.exe by wadowice. Must be installed manually, you can find it inside the "For Advanced Users" folder
+
+
+v2.5 
++ Fixed: showed a "RP+ Recovery Fault" message at first boot, if RP+ was been integrated in the CF.
++ Improved: Cookers can found all the needed files and folders inside the "For Cookers" folder... You only need to add a modded Starter*.rsc file
+
+
+v2.4
++ New: Add to Auto (DomainSrv). You can now choose to start some patches using DomainSrv and some others using the standard way. (read the DomainSrv_Readme.txt)
++ New: Fault-Recovery. When the phone is turned on and it crashes due to some bugged patch setted as "Auto", then all the "Auto" patches will be temporary disabled, so you'll be able to turn on the phone and remove the bugged patch.
++ New: Donate by SMS option. Select this to make a donation to support RP+
++ New: Two powerful new commands available for patch makers (ord_rel, ord_snr). I strongly suggest you to use them when you patch some dll. 
+ ord_snr : ordinal (decimal value) : filename : original value : new value
+ ord_rel : ordinal (decimal value) : filename : offset (starting from ordinal): original value : new value
+ ord_snr:1:sys\bin\securitymanager.dll:AABBCC:AABBCC		; Apply the patch to the first export
+ ord_rel:1:sys\bin\securitymanager.dll:0A:AABBCC:AABBCC	; Apply the patch to the first export+0x0A
++ New: Advanced > Dump ROM. Dumps the whole ROM content to file \romdumpplus.dmp
++ New: Advanced > Dump SuperPage. Dumps the superpage area to file \superpage.dmp
++ Improved: Popup will appears only once in a while (But don't forget that the development of RP+ needs to be supported)
++ Improved: Patches .zip archive moved to a different path \System\Data\RP_Patches.zip
++ Improved: For touch devices the Search Box is hidden by default
++ Fixed: Crash when \patches\ folder was empty
+
+
+
+v2.3
++ New: now RP+ can be integrated in the cooked ROM firmware
++ New: added Universal InstallServer patch (N95 and many other devices are supported too)
++ Fixed: issue when two patches were using the same shadow-page. When one patch got disabled, the other patch got disabled too.
++ Improved: patches are now installed during first launch of RP+ using the file RP_Patches.zip
++ Removed: installer executable is now useless, since the RP_Patches.zip will be processed by RP+ during first launch.
+
+
+
+v2.2
++ Improved: changed installer to place Open4All_RP+ patch in the proper drive.
++ Removed: beta expired message
+
+
+
+Beta 2.1 (400):
++ New: it is now possible to search / filter the patches in the list. Just start typing the patch name to apply the filter.
+
+
+
+Beta 2.1 (300):
++ Fixed: in the SnR command, only the first instance was patched successfully. Wasn't possible to patch further instances of the same byte pattern.
+
+
+
+Beta 2.1 (200):
++ Improved: the wildcard "??" can be used also in the new bytes pattern, in order to keep the byte unchanged 
+(eg. SnR:sys\bin\installserver.exe:0011????02233043:0028??E00B20C043 )
+
+
+
+Beta 2.1 (100):
++ New: the wildcard "??" is now available for patch-makers.
++ Fixed: memory corruption when the patch contains 2 or more changes to a RAM memory address (not in the ROM range) and the "apply patch" fails.
++ Fixed: red-icon will be shown like in RP by ZoRN, ie. if the patch doesn't perform any change to the memory the red-icon will be shown (eg. when a patch contains only comments or unmatched SnR lines)
+
+
+
+FINAL v2.1:
++ Fixed: domainsrv.exe auto patch wasn't working properly when the patch contains info: or error: messages
++ Fixed: +superpage wasn't working properly in the (200) Beta
++ Improved: Can start also if the configuration file get corrupted.
++ Improved: Can patch large executable files up to a maximum of 5Mb
++ Improved: the info: and error: messages are not shown anymore for the patches started in auto.
++ Removed: doesn't create anymore the logging files c:\predefs.txt c:\postdefs.txt c:\patch.txt
++ Removed: beta expired message
+
+
+
+Beta 2.0 (200):
++ New: added new commands, info: return: error: check the demo1-4.rmp patches included.
++ New: Added support for the Warning/Yellow Icon
++ Fixed: Restored the "LDD Not Found" error message in case that the LDD file is missing
++ Improved: When applying a patch the error messages and the yellow icon will be shown ONLY if exists the path c:\resource\ErrRd (ErrRd can be a file or a directory). Disabled by default, because these features are useful to the patch-makers only, but could confuse the end-users. To enable them, just create the file or folder c:\resource\ErrRd
++ Improved: The same Open4All.rmp file can now be used to patch all the devices (including N96)
++ Improved: Changed text in the menu' "Remove Patch" has been replaced with "Disable Patch"
+(restored the support for the SNR and REL tags)
+
+
+
+Beta 2.0 (100):
++ New: introduced #ifdef, #ifndef, #else, #endif, #define statements. This will allow to retrieve system values at runtime to create more flexible and powerful patches. Check the ReadMe_Macros.txt for all the details.
+(In this version only the ABS tag is supported)
+
+
+
+FINAL v2.0:
++ New: Popup when launching RP+ to remember to everyone the 6th September deadline.
++ New: ApplyAll/RemoveAll options to quicly Apply/Remove all the patches.
++ New: Donate options menu...
++ Fixed: The message "Application not compatible with the phone" is not shown anymore.
++ Fixed: Replaced the Open4All_N96 templove's version with wadowice's version.
++ Fixed: Sometimes the green\red patch icon wasn't showed properly
++ Improved: Touch Support, the tap will select the patch, a tap on a selected patch will apply/remove it
++ Improved: Patches can be placed in any drive, RP+ will follow the order Z: -> A: and will use the first drive which contain the \patches\ folder
++ Improved: Error messages will report the patch's name also.
++ Removed: Apply/Remove options have been removed because redundant. Just click on a patch to apply/remove it.
++ Removed: The annoying popups for apply patch have gone Smile yeppi!!!
++ Removed: The advanced menu' has been temporary removed, it will came back again with more options available like "Dump/View any user choosen area of memory"...
+
+
+
+Beta 0.9 (500)
++ New: added patches DisableCaps and Open4All (the DisableCaps patch will give red icon if the caps are already disabled, or if you model is not supported by the patch)
++ Fixed: restored compatibilty with OmniaHD
+
+
+
+Beta 0.9
++ New: added LoadPatch/CheckPatch/ApplyPatch logs to the Engine, to check the correct patch parsing... <-- I know these popups are really annoying, but in order to release the final verion I need to be sure that (almost) ALL the RP patches will work correctly on RP+ also.
++ Fixed: was not compatible with some devices (eg. E63). The error message "patcher.ldd not found" was shown always also after a reboot.
++ Fixed: some patches were not applied due to additional spaces in the .rmp... Now additional spaces should be handled correcly.
++ Fixed: crash when trying to patch an executable that was missing in the device.
++ Improved: better parsing of the patch file. Both windows and unix text should be handled properly, with  unicode/utf8/ascii encoding.
++ Removed: autostart correctly works, so popups have been removed (however, other popups have been added to the Engine, so you'll see popups for each patch you put in autostart)
+
+
+
+Beta 0.8
++ New: "Patch Info" option is now available and working.
++ New: An official webpage for RomPatcher+ has been created. The final version and any official update will be published at http://www.symbian-toys.com/rompatcherplus.aspx
++ Fixed: The autostart configuration get corrupted after a while.
++ Fixed: DumpRom command now correctly unlock the file if the operation is cancelled
++ Improved: Removed the version number information from the "System Info" menu'. (it is already shown in the menu' About...)
++ Improved: Changed the order of the options in the menu' to make easier to select "Add to Auto / Remove from Auto"
++ Improved: Updated credits.
++ Removed: DisableCaps.rmp and Open4All.rmp patches have been removed.

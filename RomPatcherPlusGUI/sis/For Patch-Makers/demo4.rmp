@@ -1,0 +1,15 @@
+﻿
+;This is just a Demo Patch to show the new commands that will be introduced in the next RP+ version
+;Check out the "Options > Advanced > System Info" menu' to check the exact FW version string.
+
+info: this demo will give always red cross on Nokia 5800, FW v20.0.012
+#IFDEF MACHINE_2000DA56
+	#IFDEF FW_20.0.012
+		error:This patch is not compatible with Nokia 5800 FW v20.0.012
+		; The patch execution will be interrupted.
+		; And the patch will report always a red cross.
+	#ENDIF
+#ENDIF
+
+
+info: Patch Applied!

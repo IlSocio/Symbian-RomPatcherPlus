@@ -1,0 +1,73 @@
+
+// NetworkServices needed to send sms through RSendAs
+CAPABILITY NetworkServices
+  
+TARGET			RomPatcherPlus.exe
+UID			   0x100039CE 0xE0050C10
+VENDORID	  	  0
+TARGETTYPE		EXE
+EPOCSTACKSIZE	 0x10000
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\variant \epoc32\include\ecom
+USERINCLUDE	   ..\inc ..\data
+ 
+SOURCEPATH		..\data
+START RESOURCE RomPatcherPlusGUI.rss
+	HEADER
+	TARGETPATH resource\apps
+END 
+
+START RESOURCE RomPatcherPlusGUI.rss
+	HEADER
+	TARGETPATH resource\apps
+	TARGET RomPatcherPlus.r01
+END
+
+START RESOURCE	RomPatcherPlus_reg.rss
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+START RESOURCE E0050C10.rss 
+  TARGETPATH  \private\101f875a\import 
+  HEADER                                   
+END    
+
+STATICLIBRARY ROMPATCHERENGINE.LIB
+STATICLIBRARY commonlib.lib
+
+LIBRARY			euser.lib apparc.lib cone.lib eikcore.lib avkon.lib sysutil.lib 
+LIBRARY			efsrv.lib estor.lib eikcoctl.lib eikdlg.lib bitgdi.lib
+LIBRARY			eikctl.lib bafl.lib fbscli.lib aknnotify.lib aknicon.lib form.lib
+LIBRARY			etext.lib gdi.lib egul.lib insock.lib efile.lib 
+LIBRARY			ecom.lib InetProtUtil.lib http.lib esock.lib charconv.lib hal.lib CommonEngine.lib browserlauncher.lib 
+LIBRARY	apgrfx.lib apmime.lib
+LIBRARY aknskins.lib aknskinsrv.lib aknswallpaperutils.lib 
+LIBRARY ezip.lib ws32.lib msgs.lib 
+LIBRARY cryptography.lib pbe.lib xmlframework.lib
+LIBRARY charconv.lib convnames.lib gb2312_shared.lib jisx0201.lib jisx0208.lib 
+LIBRARY    sendas2.lib
+ 
+LANG 				01
+
+
+SOURCEPATH		..\src 
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SOURCE RomPatcherPlusListBox.cpp RomPatcherPlusListBoxView.cpp RomPatcherPlusDocument.cpp RomPatcherPlusApplication.cpp RomPatcherPlusAppUi.cpp FortumoXML.cpp
+
+
+// CAPABILITY TCB DRM
+// CAPABILITY AllFiles CommDD DiskAdmin MultimediaDD NetworkControl
+// CAPABILITY Location PowerMgmt ProtServ ReadDeviceData SurroundingsDD SwEvent TrustedUI WriteDeviceData
+// CAPABILITY LocalServices NetworkServices ReadUserData UserEnvironment WriteUserData
+
+// CAPABILITY Location PowerMgmt ProtServ ReadDeviceData SurroundingsDD SwEvent TrustedUI WriteDeviceData LocalServices NetworkServices ReadUserData UserEnvironment WriteUserData
+
+//CAPABILITY ALL -DRM -TCB -AllFiles
+
+//CAPABILITY ALL -TCB
+EPOCHEAPSIZE 0x1000 0x500000
+

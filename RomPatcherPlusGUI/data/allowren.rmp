@@ -1,0 +1,19 @@
+; *** Patch: AllowRenameAndMoveFolders ***
+; Author: wadowice
+; Date: 28-Jun-09
+; Greetings to Rol@N95d, megaexer, asterolykos.
+; Tested on N96 . If red cross, show menu2.exe and menumodel.dll
+; If yellow triangle, some things work, others not.
+;
+; In the Menu, show new commands for:
+; -rename applications. This is useful.
+; -move folders inside folders. Also useful.
+; -icon animation: don't use. Always crash.
+; -memory details.
+; -remove applications.
+SnR:sys\bin\menu2.exe:68696464656E00:69696464656E00
+SnR:sys\bin\menumodel.dll:01D0002070470120:01D0012070470120
+SnR:sys\bin\menumodel.dll:01D0002070470120:01D0012070470120
+SnR:sys\bin\menumodel.dll:01D0002070470120:01D0012070470120
+SnR:sys\bin\menumodel.dll:00D000207047:00D001207047
+SnR:sys\bin\menumodel.dll:00D000207047:00D001207047

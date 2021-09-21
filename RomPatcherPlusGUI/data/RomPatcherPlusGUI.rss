@@ -1,0 +1,103 @@
+/*
+========================================================================
+ Name        : RomPatcherPlus.rss
+ Author      : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : 
+========================================================================
+*/
+NAME ROMP
+
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <eikon.rh>
+#include <appinfo.rh>
+#include "RomPatcherPlusGUI.hrh"
+#include "RomPatcherPlus.loc"
+
+RESOURCE RSS_SIGNATURE
+	{
+	}
+RESOURCE TBUF
+	{
+	buf = "RomPatcherPlus";
+	}
+RESOURCE EIK_APP_INFO r_application_rom_patcher_plus_app_ui
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	status_pane = r_application_status_pane;
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_application_status_pane
+	{
+	}
+RESOURCE LOCALISABLE_APP_INFO r_localisable_app_info
+	{
+	short_caption = STR_RomPatcherPlusApplication_4;
+	caption_and_icon = CAPTION_AND_ICON_INFO
+		{
+		caption = STR_RomPatcherPlusApplication_3;
+		number_of_icons = 1;
+		icon_file = "\\resource\\apps\\RomPatcherPlus_aif.mif";
+		};
+	}
+RESOURCE TBUF r_application_akn_view_reference1
+	{
+	}
+
+RESOURCE TBUF r_ldd_not_found { buf=STR_ldd_not_found; }
+RESOURCE TBUF r_loadldd_error { buf="LoadLogicalDevice Error: %d"; }
+
+
+RESOURCE DIALOG r_longtext_dialog 
+	{
+	flags = EAknDialogGenericQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+	items = {
+		DLG_LINE {
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			itemflags = EEikDlgItemNonFocusing;
+			control = AVKON_HEADING 
+				{
+				label = "header";
+				};
+		},
+		DLG_LINE 
+		{
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY 
+				{
+				};
+		}
+	};
+	}
+	
+	
+	RESOURCE DIALOG r_longtext_dialog_ok_back
+		{
+		flags = EAknDialogGenericQueryFlags;
+		buttons = R_AVKON_SOFTKEYS_OK_BACK;
+		items = {
+			DLG_LINE {
+				type = EAknCtPopupHeadingPane;
+				id = EAknMessageQueryHeaderId;
+				itemflags = EEikDlgItemNonFocusing;
+				control = AVKON_HEADING 
+					{
+					label = "header";
+					};
+			},
+			DLG_LINE 
+			{
+				type = EAknCtMessageQuery;
+				id = EAknMessageQueryContentId;
+				control = AVKON_MESSAGE_QUERY 
+					{
+					};
+			}
+		};
+		}
+
+
+#include "RomPatcherPlusListBox.rssi"

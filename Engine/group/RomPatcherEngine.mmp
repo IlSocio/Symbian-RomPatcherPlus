@@ -1,0 +1,35 @@
+ 
+TARGET			RomPatcherEngine.LIB
+UID 0
+VENDORID	  	  0
+TARGETTYPE		LIB
+EPOCSTACKSIZE	 0x5000
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\variant \epoc32\include\ecom
+USERINCLUDE	   ..\inc ..\data
+
+STATICLIBRARY commonlib.lib
+
+LIBRARY ezip.lib ws32.lib charconv.lib euser.lib efsrv.lib bafl.lib apgrfx.lib msgs.lib 
+LIBRARY			euser.lib apparc.lib cone.lib eikcore.lib avkon.lib 
+LIBRARY			efsrv.lib estor.lib eikcoctl.lib eikdlg.lib ezip.lib
+LIBRARY			eikctl.lib bafl.lib fbscli.lib aknnotify.lib aknicon.lib
+LIBRARY			etext.lib gdi.lib egul.lib insock.lib sysutil.lib 
+LIBRARY			ecom.lib InetProtUtil.lib http.lib esock.lib charconv.lib hal.lib CommonEngine.lib 
+LIBRARY	charconv.lib efsrv.lib bafl.lib euser.lib apgrfx.lib apmime.lib 
+LIBRARY cryptography.lib pbe.lib 
+LIBRARY ws32.lib
+
+LANG 				01
+ 
+ 
+ 
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+SOURCEPATH ..\src
+SOURCE Data.cpp RomPatcherEngine.cpp RomPatcherEngineDllMain.cpp LineComment.cpp LineAbs.cpp LineSnr.cpp AbstractLine.cpp LineEmpty.cpp LineSuper.cpp LineRel.cpp LineInfo.cpp LineError.cpp LineReturn.cpp LineOrdSnr.cpp LineOrdRel.cpp
+
+CAPABILITY LocalServices Location NetworkServices PowerMgmt ProtServ ReadDeviceData ReadUserData SurroundingsDD SwEvent TrustedUI UserEnvironment WriteDeviceData WriteUserData
+
+//CAPABILITY ALL -TCB

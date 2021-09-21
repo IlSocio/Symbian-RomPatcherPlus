@@ -1,0 +1,17 @@
+// BLD.INF
+//
+// Copyright (c) 2004 Symbian Ltd.  All rights reserved.
+//
+
+/**
+@file
+*/
+
+PRJ_EXPORTS
+
+../inc/patcherc.h /epoc32/include/patcherc.h
+
+PRJ_MMPFILES
+
+patcherldd
+

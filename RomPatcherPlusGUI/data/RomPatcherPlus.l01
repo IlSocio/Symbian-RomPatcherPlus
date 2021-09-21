@@ -1,0 +1,14 @@
+/*
+========================================================================
+ Name        : RomPatcherPlus.l01
+ Author      : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_RomPatcherPlusApplication_2 ""
+#define STR_RomPatcherPlusApplication_3 "ROMPatcher+"
+#define STR_RomPatcherPlusApplication_4 "ROMPatcher+"
+#define STR_RomPatcherPlusApplication_1 ""
+#define STR_ldd_not_found "\\sys\\bin\\Patcher*.LDD Not Found!"

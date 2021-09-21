@@ -1,0 +1,18 @@
+; *** Patch: Open4All_N96, probable N90 *** 
+; Author: wadowice & Basil 
+; Date: 13-Jun-09 
+; This patch open c:\sys\bin , private, resource for all file navigators. 
+; No problem if yellow triangle. 
+; No problem, i fixed to green (CODeRUS) 
+; Thank-you to Templove, CODeRUS, El_Zari, Rol@N95 . 
+SnR:sys\bin\efile.exe:41C841E2:02C841E2 
+SnR:sys\bin\efile.exe:53C841E245C05CE217:01C841E245C05CE217 
+SnR:sys\bin\efile.exe:53C841E25CC05CE20B:01C841E25CC05CE20B 
+SnR:sys\bin\efile.exe:53C841E259C05CE205:01C841E259C05CE205 
+SnR:sys\bin\efile.exe:53C841E25CC05CE216:01C841E25CC05CE216 
+SnR:sys\bin\efile.exe:53C841E259C05CE210:01C841E259C05CE210 
+SnR:sys\bin\efile.exe:53C841E245C05CE224:01C841E245C05CE224 
+SnR:sys\bin\efile.exe:53C841E25CC05CE218:01C841E25CC05CE218 
+SnR:sys\bin\efile.exe:53C841E259C05CE212:01C841E259C05CE212 
+SnR:sys\bin\efile.exe:53C841E25CC05CE21E:01C841E25CC05CE21E 
+SnR:sys\bin\efile.exe:53C841E259C05CE218:01C841E259C05CE218

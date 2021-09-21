@@ -1,0 +1,34 @@
+     
+TARGET			0RPAutoStart.exe
+UID 0 0xE7771130 
+VENDORID	  	  0
+TARGETTYPE		EXE 
+EPOCSTACKSIZE	 0x10000
+ 
+SYSTEMINCLUDE \epoc32\include \epoc32\include\variant \epoc32\include\ecom
+USERINCLUDE	   ..\inc ..\data
+ 
+STATICLIBRARY ROMPATCHERENGINE.LIB
+STATICLIBRARY commonlib.lib 
+ 
+LIBRARY			euser.lib apparc.lib cone.lib eikcore.lib avkon.lib sysutil.lib 
+LIBRARY			efsrv.lib estor.lib eikcoctl.lib eikdlg.lib 
+LIBRARY			eikctl.lib bafl.lib fbscli.lib aknnotify.lib aknicon.lib
+LIBRARY			etext.lib gdi.lib egul.lib insock.lib ezip.lib 
+LIBRARY			ecom.lib InetProtUtil.lib http.lib esock.lib charconv.lib hal.lib CommonEngine.lib 
+LIBRARY	charconv.lib efsrv.lib bafl.lib euser.lib apgrfx.lib apmime.lib  ws32.lib 
+LIBRARY cryptography.lib pbe.lib etel3rdparty.lib
+ 
+ 
+LANG 				01   
+       
+             
+   
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY 
+#endif 
+SOURCEPATH ..\src
+SOURCE RomPatcherAuto.cpp
+
+EPOCHEAPSIZE 0x1000 0x500000
+ 

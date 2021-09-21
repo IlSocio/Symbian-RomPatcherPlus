@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknView" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitle" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControl" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ContainerBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknListBox" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ListBoxItem" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBar" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuItem" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuItemBase" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.0.1</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknView">
+    <property id="className">CRomPatcherPlusListBoxView</property>
+    <compoundProperty id="location">
+      <property id="x">30</property>
+      <property id="y">28</property>
+    </compoundProperty>
+    <property id="optionsMenu" type="componentRef">optionsMenu</property>
+    <property id="name">RomPatcherPlusListBoxView</property>
+    <compoundProperty id="size">
+      <property id="width">352</property>
+      <property id="height">416</property>
+    </compoundProperty>
+    <component id="com.nokia.sdt.series60.StatusPane">
+      <compoundProperty id="location">
+        <property id="x">32</property>
+      </compoundProperty>
+      <property id="name">statusPane</property>
+      <compoundProperty id="size">
+        <property id="width">304</property>
+        <property id="height">88</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.StatusPaneTitle">
+        <compoundProperty id="location">
+          <property id="x">92</property>
+        </compoundProperty>
+        <property id="name">title</property>
+        <property id="titleText" type="i18n">STR_RomPatcherPlusListBoxView_3</property>
+        <compoundProperty id="size">
+          <property id="width">216</property>
+          <property id="height">58</property>
+        </compoundProperty>
+        <compoundProperty id="image"/>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.CBA">
+      <compoundProperty id="location">
+        <property id="y">375</property>
+      </compoundProperty>
+      <compoundProperty id="info">
+        <property id="leftText" type="i18n">STR_RomPatcherPlusListBoxView_1</property>
+        <property id="rightText" type="i18n">STR_RomPatcherPlusListBoxView_2</property>
+      </compoundProperty>
+      <property id="name">controlPane</property>
+      <compoundProperty id="size">
+        <property id="width">352</property>
+        <property id="height">40</property>
+      </compoundProperty>
+    </component>
+    <component id="com.nokia.sdt.series60.CCoeControl">
+      <property id="initialFocus" type="componentRef">listBox</property>
+      <compoundProperty id="location">
+        <property id="y">88</property>
+      </compoundProperty>
+      <property id="className">CRomPatcherPlusListBox</property>
+      <property id="name">RomPatcherPlusListBox</property>
+      <compoundProperty id="size">
+        <property id="width">352</property>
+        <property id="height">288</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.CAknListBox">
+        <property id="style">CAknSingleGraphicStyleListBox</property>
+        <sequenceProperty id="alignmentInfo">
+          <element>Default</element>
+          <element>Default</element>
+        </sequenceProperty>
+        <compoundProperty id="size">
+          <property id="width">352</property>
+          <property id="height">288</property>
+        </compoundProperty>
+        <compoundProperty id="location"/>
+        <compoundProperty id="markIcon"/>
+        <sequenceProperty id="extraImages"/>
+        <property id="name">listBox</property>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location"/>
+          <property id="headingText" type="i18n">STR_RomPatcherPlusListBoxView_19</property>
+          <property id="name">listboxItem1</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_4</property>
+          <compoundProperty id="image">
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpid">EMbmRompatcherplussvgIdle</property>
+            <property id="bmpmask">EMbmRompatcherplussvgIdle_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="width">352</property>
+            <property id="height">44</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">44</property>
+          </compoundProperty>
+          <property id="headingText" type="i18n">STR_RomPatcherPlusListBoxView_20</property>
+          <property id="name">listboxItem2</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_5</property>
+          <compoundProperty id="image">
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpid">EMbmRompatcherplussvgIdle_auto</property>
+            <property id="bmpmask">EMbmRompatcherplussvgIdle_auto_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="width">352</property>
+            <property id="height">44</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">88</property>
+          </compoundProperty>
+          <property id="headingText" type="i18n">STR_RomPatcherPlusListBoxView_26</property>
+          <property id="name">listboxItem9</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_27</property>
+          <compoundProperty id="image">
+            <property id="bmpid">EMbmRompatcherplussvgIdle_domain</property>
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpmask">EMbmRompatcherplussvgIdle_domain_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="height">44</property>
+            <property id="width">352</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">132</property>
+          </compoundProperty>
+          <property id="headingText" type="i18n">STR_RomPatcherPlusListBoxView_21</property>
+          <property id="name">listboxItem3</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_7</property>
+          <compoundProperty id="image">
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpid">EMbmRompatcherplussvgOk</property>
+            <property id="bmpmask">EMbmRompatcherplussvgOk_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="width">352</property>
+            <property id="height">44</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">176</property>
+          </compoundProperty>
+          <property id="headingText" type="i18n">STR_RomPatcherPlusListBoxView_22</property>
+          <property id="name">listboxItem4</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_12</property>
+          <compoundProperty id="image">
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpid">EMbmRompatcherplussvgOk_auto</property>
+            <property id="bmpmask">EMbmRompatcherplussvgOk_auto_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="width">352</property>
+            <property id="height">44</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">220</property>
+          </compoundProperty>
+          <property id="headingText" type="i18n">STR_RomPatcherPlusListBoxView_28</property>
+          <property id="name">listboxItem10</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_29</property>
+          <compoundProperty id="image">
+            <property id="bmpid">EMbmRompatcherplussvgOk_domain</property>
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpmask">EMbmRompatcherplussvgOk_domain_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="height">44</property>
+            <property id="width">352</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">264</property>
+          </compoundProperty>
+          <property id="headingText" type="i18n">STR_RomPatcherPlusListBoxView_23</property>
+          <property id="name">listboxItem5</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_13</property>
+          <compoundProperty id="image">
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpid">EMbmRompatcherplussvgKo</property>
+            <property id="bmpmask">EMbmRompatcherplussvgKo_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="width">352</property>
+            <property id="height">44</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">308</property>
+          </compoundProperty>
+          <property id="headingText" type="i18n">STR_RomPatcherPlusListBoxView_24</property>
+          <property id="name">listboxItem6</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_14</property>
+          <compoundProperty id="image">
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpid">EMbmRompatcherplussvgKo_auto</property>
+            <property id="bmpmask">EMbmRompatcherplussvgKo_auto_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="width">352</property>
+            <property id="height">44</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">352</property>
+          </compoundProperty>
+          <property id="headingText" type="i18n">STR_RomPatcherPlusListBoxView_31</property>
+          <property id="name">listboxItem11</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_34</property>
+          <compoundProperty id="image">
+            <property id="bmpid">EMbmRompatcherplussvgKo_domain</property>
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpmask">EMbmRompatcherplussvgKo_domain_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="height">44</property>
+            <property id="width">352</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">396</property>
+          </compoundProperty>
+          <property id="name">listboxItem7</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_32</property>
+          <compoundProperty id="image">
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpid">EMbmRompatcherplussvgWarn</property>
+            <property id="bmpmask">EMbmRompatcherplussvgWarn_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="width">352</property>
+            <property id="height">44</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">440</property>
+          </compoundProperty>
+          <property id="name">listboxItem8</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_33</property>
+          <compoundProperty id="image">
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpid">EMbmRompatcherplussvgWarn_auto</property>
+            <property id="bmpmask">EMbmRompatcherplussvgWarn_auto_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="width">352</property>
+            <property id="height">44</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.ListBoxItem">
+          <compoundProperty id="location">
+            <property id="y">484</property>
+          </compoundProperty>
+          <property id="name">listboxItem12</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_38</property>
+          <compoundProperty id="image">
+            <property id="bmpid">EMbmRompatcherplussvgWarn_domain</property>
+            <property id="bmpfile">\resource\apps\RomPatcherPlusSvg.mif</property>
+            <property id="bmpmask">EMbmRompatcherplussvgWarn_domain_mask</property>
+          </compoundProperty>
+          <compoundProperty id="size">
+            <property id="height">44</property>
+            <property id="width">352</property>
+          </compoundProperty>
+        </component>
+        <eventBinding id="itemClicked" handlerDisplay="HandleListBoxItemClickedL" handlerSymbol="cpp@src//RomPatcherPlusListBox.cpp/function(CRomPatcherPlusListBox::HandleListBoxItemClickedL(CEikListBox*, TListBoxEvent))"/>
+        <eventBinding id="itemDoubleClicked" handlerDisplay="HandleListBoxItemDoubleClickedL" handlerSymbol="cpp@src//RomPatcherPlusListBox.cpp/function(CRomPatcherPlusListBox::HandleListBoxItemDoubleClickedL(CEikListBox*, TListBoxEvent))"/>
+        <eventBinding id="enterKeyPressed" handlerDisplay="HandleListBoxEnterKeyPressedL" handlerSymbol="cpp@src//RomPatcherPlusListBox.cpp/function(CRomPatcherPlusListBox::HandleListBoxEnterKeyPressedL(CEikListBox*, TListBoxEvent))"/>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.MenuBar">
+      <compoundProperty id="location">
+        <property id="x">12</property>
+        <property id="y">-8</property>
+      </compoundProperty>
+      <property id="name">optionsMenu</property>
+      <compoundProperty id="size">
+        <property id="height">383</property>
+        <property id="width">327</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.MenuPane">
+        <compoundProperty id="location"/>
+        <property id="name">menuPane1</property>
+        <compoundProperty id="size">
+          <property id="height">383</property>
+          <property id="width">327</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">2</property>
+          </compoundProperty>
+          <property id="name">add_to_AutoMenuItem</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_9</property>
+          <compoundProperty id="size">
+            <property id="width">312</property>
+            <property id="height">45</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleAdd_to_AutoMenuItemSelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandleAdd_to_AutoMenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">49</property>
+          </compoundProperty>
+          <property id="name">add_to_Auto_DomainSrv_MenuItem</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_8</property>
+          <compoundProperty id="size">
+            <property id="width">312</property>
+            <property id="height">45</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleAdd_to_Auto_DomainSrv_MenuItemSelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandleAdd_to_Auto_DomainSrv_MenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">96</property>
+          </compoundProperty>
+          <property id="name">remove_from_AutoMenuItem</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_25</property>
+          <compoundProperty id="size">
+            <property id="width">312</property>
+            <property id="height">45</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleRemove_from_AutoMenuItemSelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandleRemove_from_AutoMenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">143</property>
+          </compoundProperty>
+          <property id="name">patch_InfoMenuItem1</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_10</property>
+          <compoundProperty id="size">
+            <property id="width">312</property>
+            <property id="height">45</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandlePatch_InfoMenuItem1SelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandlePatch_InfoMenuItem1SelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">190</property>
+          </compoundProperty>
+          <property id="name">all_PatchesMenuItem</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_35</property>
+          <compoundProperty id="size">
+            <property id="width">312</property>
+            <property id="height">45</property>
+          </compoundProperty>
+          <component id="com.nokia.sdt.series60.MenuPane">
+            <compoundProperty id="location">
+              <property id="x">312</property>
+            </compoundProperty>
+            <property id="name">menuPane4</property>
+            <compoundProperty id="size"/>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">2</property>
+              </compoundProperty>
+              <property id="name">applyMenuItem1</property>
+              <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_36</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleApplyMenuItem1SelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandleApplyMenuItem1SelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">4</property>
+              </compoundProperty>
+              <property id="name">disableMenuItem</property>
+              <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_37</property>
+              <compoundProperty id="size"/>
+              <eventBinding id="selected" handlerDisplay="HandleDisableMenuItemSelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandleDisableMenuItemSelectedL(TInt))"/>
+            </component>
+          </component>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">237</property>
+          </compoundProperty>
+          <property id="name">patch_AdvMenuItem</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_11</property>
+          <compoundProperty id="size">
+            <property id="width">312</property>
+            <property id="height">45</property>
+          </compoundProperty>
+          <component id="com.nokia.sdt.series60.MenuPane">
+            <compoundProperty id="location">
+              <property id="x">312</property>
+            </compoundProperty>
+            <property id="name">menuPane2</property>
+            <compoundProperty id="size">
+              <property id="width">216</property>
+              <property id="height">139</property>
+            </compoundProperty>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">2</property>
+              </compoundProperty>
+              <property id="name">dump_ROMMenuItem</property>
+              <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_16</property>
+              <compoundProperty id="size">
+                <property id="width">201</property>
+                <property id="height">31</property>
+              </compoundProperty>
+              <eventBinding id="selected" handlerDisplay="HandleDump_ROMMenuItemSelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandleDump_ROMMenuItemSelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">35</property>
+              </compoundProperty>
+              <property id="name">dump_SuperPageMenuItem</property>
+              <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_17</property>
+              <compoundProperty id="size">
+                <property id="width">201</property>
+                <property id="height">31</property>
+              </compoundProperty>
+              <eventBinding id="selected" handlerDisplay="HandleDump_SuperPageMenuItemSelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandleDump_SuperPageMenuItemSelectedL(TInt))"/>
+            </component>
+            <component id="com.nokia.sdt.series60.MenuItem">
+              <compoundProperty id="location">
+                <property id="x">5</property>
+                <property id="y">68</property>
+              </compoundProperty>
+              <property id="name">system_InfoMenuItem</property>
+              <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_18</property>
+              <compoundProperty id="size">
+                <property id="width">201</property>
+                <property id="height">31</property>
+              </compoundProperty>
+              <eventBinding id="selected" handlerDisplay="HandleSystem_InfoMenuItemSelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandleSystem_InfoMenuItemSelectedL(TInt))"/>
+            </component>
+          </component>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">284</property>
+          </compoundProperty>
+          <property id="name">donateMenuItem</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_6</property>
+          <compoundProperty id="size">
+            <property id="width">312</property>
+            <property id="height">45</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleDonateMenuItemSelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandleDonateMenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">331</property>
+          </compoundProperty>
+          <property id="name">about_MenuItem1</property>
+          <property id="text" type="i18n">STR_RomPatcherPlusListBoxView_15</property>
+          <compoundProperty id="size">
+            <property id="width">312</property>
+            <property id="height">45</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleAbout_MenuItem1SelectedL" handlerSymbol="cpp@src//RomPatcherPlusListBoxView.cpp/function(CRomPatcherPlusListBoxView::HandleAbout_MenuItem1SelectedL(TInt))"/>
+        </component>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_English">
+      <string id="STR_RomPatcherPlusListBoxView_1"/>
+      <string id="STR_RomPatcherPlusListBoxView_2"/>
+      <string id="STR_RomPatcherPlusListBoxView_3">ROMPatcher Plus</string>
+      <string id="STR_RomPatcherPlusListBoxView_9">Add to Auto</string>
+      <string id="STR_RomPatcherPlusListBoxView_11">Advanced</string>
+      <string id="STR_RomPatcherPlusListBoxView_15">About...</string>
+      <string id="STR_RomPatcherPlusListBoxView_16">Dump ROM</string>
+      <string id="STR_RomPatcherPlusListBoxView_17">Dump SuperPage</string>
+      <string id="STR_RomPatcherPlusListBoxView_18">System Info</string>
+      <string id="STR_RomPatcherPlusListBoxView_4">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_5">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_7">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_12">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_13">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_14">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_19">heading</string>
+      <string id="STR_RomPatcherPlusListBoxView_20">heading</string>
+      <string id="STR_RomPatcherPlusListBoxView_21">heading</string>
+      <string id="STR_RomPatcherPlusListBoxView_22">heading</string>
+      <string id="STR_RomPatcherPlusListBoxView_23">heading</string>
+      <string id="STR_RomPatcherPlusListBoxView_24">heading</string>
+      <string id="STR_RomPatcherPlusListBoxView_25">Remove from Auto</string>
+      <string id="STR_RomPatcherPlusListBoxView_10">Patch Info</string>
+      <string id="STR_RomPatcherPlusListBoxView_32">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_33">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_35">All Patches</string>
+      <string id="STR_RomPatcherPlusListBoxView_36">Apply</string>
+      <string id="STR_RomPatcherPlusListBoxView_37">Disable</string>
+      <string id="STR_RomPatcherPlusListBoxView_6">Donate</string>
+      <string id="STR_RomPatcherPlusListBoxView_8">Add to Auto (DomainSrv)</string>
+      <string id="STR_RomPatcherPlusListBoxView_26">heading</string>
+      <string id="STR_RomPatcherPlusListBoxView_27">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_28">heading</string>
+      <string id="STR_RomPatcherPlusListBoxView_29">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_31">heading</string>
+      <string id="STR_RomPatcherPlusListBoxView_34">item</string>
+      <string id="STR_RomPatcherPlusListBoxView_38">item</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="listboxItem10">r_rom_patcher_plus_list_box_listbox_item10</resourceMapping>
+      <resourceMapping instanceName="listboxItem1">r_rom_patcher_plus_list_box_listbox_item1</resourceMapping>
+      <resourceMapping instanceName="optionsMenu">r_rom_patcher_plus_list_box_options_menu</resourceMapping>
+      <resourceMapping instanceName="listboxItem2">r_rom_patcher_plus_list_box_listbox_item2</resourceMapping>
+      <resourceMapping instanceName="listboxItem3">r_rom_patcher_plus_list_box_listbox_item3</resourceMapping>
+      <resourceMapping instanceName="listboxItem4">r_rom_patcher_plus_list_box_listbox_item4</resourceMapping>
+      <resourceMapping instanceName="listboxItem5">r_rom_patcher_plus_list_box_listbox_item5</resourceMapping>
+      <resourceMapping instanceName="listboxItem6">r_rom_patcher_plus_list_box_listbox_item6</resourceMapping>
+      <resourceMapping instanceName="title">r_rom_patcher_plus_list_box_title_resource</resourceMapping>
+      <resourceMapping instanceName="listboxItem7">r_rom_patcher_plus_list_box_listbox_item7</resourceMapping>
+      <resourceMapping instanceName="listboxItem8">r_rom_patcher_plus_list_box_listbox_item8</resourceMapping>
+      <resourceMapping instanceName="listboxItem9">r_rom_patcher_plus_list_box_listbox_item9</resourceMapping>
+      <resourceMapping instanceName="listboxItem11">r_rom_patcher_plus_list_box_listbox_item11</resourceMapping>
+      <resourceMapping instanceName="menuPane4">r_rom_patcher_plus_list_box_menu_pane4</resourceMapping>
+      <resourceMapping instanceName="listboxItem12">r_rom_patcher_plus_list_box_listbox_item12</resourceMapping>
+      <resourceMapping instanceName="menuPane2">r_rom_patcher_plus_list_box_menu_pane2</resourceMapping>
+      <resourceMapping instanceName="menuPane1">r_rom_patcher_plus_list_box_menu_pane1_menu_pane</resourceMapping>
+      <resourceMapping instanceName="RomPatcherPlusListBoxView">r_rom_patcher_plus_list_box_rom_patcher_plus_list_box_view</resourceMapping>
+      <resourceMapping instanceName="listBox">r_rom_patcher_plus_list_box_list_box</resourceMapping>
+      <resourceMapping instanceName="statusPane">r_rom_patcher_plus_list_box_status_pane</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="add_to_Auto_DomainSrv_MenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewAdd_to_Auto_DomainSrv_MenuItemCommand</enumMapping>
+      <enumMapping instanceName="remove_from_AutoMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewRemove_from_AutoMenuItemCommand</enumMapping>
+      <enumMapping instanceName="dump_Custom_AreaMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewDump_Custom_AreaMenuItemCommand</enumMapping>
+      <enumMapping instanceName="listBox" propertyId="type">EAknListBoxSelectionList</enumMapping>
+      <enumMapping instanceName="dump_ROMMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewDump_ROMMenuItemCommand</enumMapping>
+      <enumMapping instanceName="add_to_AutoMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewAdd_to_AutoMenuItemCommand</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidTitle</enumMapping>
+      <enumMapping instanceName="donateMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewDonateMenuItemCommand</enumMapping>
+      <enumMapping instanceName="dump_SuperPageMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewDump_SuperPageMenuItemCommand</enumMapping>
+      <enumMapping instanceName="disableMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewDisableMenuItemCommand</enumMapping>
+      <enumMapping instanceName="overclockMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewOverclockMenuItemCommand</enumMapping>
+      <enumMapping instanceName="RomPatcherPlusListBoxView" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">ERomPatcherPlusListBoxViewId</enumMapping>
+      <enumMapping instanceName="patch_InfoMenuItem1" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewPatch_InfoMenuItem1Command</enumMapping>
+      <enumMapping instanceName="applyMenuItem1" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewApplyMenuItem1Command</enumMapping>
+      <enumMapping instanceName="using_PayPalMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewUsing_PayPalMenuItemCommand</enumMapping>
+      <enumMapping instanceName="about_MenuItem1" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewAbout_MenuItem1Command</enumMapping>
+      <enumMapping instanceName="system_InfoMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">ERomPatcherPlusListBoxViewSystem_InfoMenuItemCommand</enumMapping>
+      <enumMapping instanceName="title" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtTitlePane</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>src/rompatcherpluslistbox.cpp</file>
+    <file>inc/rompatcherpluslistboxview.h</file>
+    <file>src/rompatcherpluslistboxview.cpp</file>
+    <file>inc/rompatcherpluslistbox.h</file>
+    <file>data/rompatcherplusgui.rss</file>
+    <file>data/rompatcherpluslistbox.rssi</file>
+    <file>inc/rompatcherplusgui.hrh</file>
+    <file>inc/rompatcherpluslistbox.hrh</file>
+    <file>data/rompatcherplus.loc</file>
+    <file>data/rompatcherplus.l01</file>
+    <file>data/rompatcherpluslistbox.loc</file>
+    <file>data/rompatcherpluslistbox.l01</file>
+  </generatedFiles>
+</designerData>

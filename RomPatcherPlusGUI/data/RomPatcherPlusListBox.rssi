@@ -1,0 +1,362 @@
+/*
+========================================================================
+ Name        : RomPatcherPlusListBox.rssi
+ Author      : Marco Bellino
+ Copyright   : Guardian-Mobile.com
+ Description : 
+========================================================================
+*/
+#include "RomPatcherPlusListBox.hrh"
+#include "RomPatcherPlusListBox.loc"
+
+RESOURCE AVKON_VIEW r_rom_patcher_plus_list_box_rom_patcher_plus_list_box_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	menubar = r_rom_patcher_plus_list_box_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_rom_patcher_plus_list_box_options_menu
+	{titles =
+			{
+			MENU_TITLE
+				{
+				menu_pane = r_rom_patcher_plus_list_box_menu_pane1_menu_pane;
+				}
+			};
+
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_rom_patcher_plus_list_box_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_rom_patcher_plus_list_box_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_rom_patcher_plus_list_box_title_resource
+	{
+	txt = STR_RomPatcherPlusListBoxView_3;
+	}
+RESOURCE LISTBOX r_rom_patcher_plus_list_box_list_box
+	{
+	flags = EAknListBoxSelectionList;
+	}
+RESOURCE MENU_PANE r_rom_patcher_plus_list_box_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewAdd_to_AutoMenuItemCommand;
+			txt = STR_RomPatcherPlusListBoxView_9;
+			},
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewAdd_to_Auto_DomainSrv_MenuItemCommand;
+			txt = STR_RomPatcherPlusListBoxView_8;
+			},
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewRemove_from_AutoMenuItemCommand;
+			txt = STR_RomPatcherPlusListBoxView_25;
+			},
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewPatch_InfoMenuItem1Command;
+			txt = STR_RomPatcherPlusListBoxView_10;
+			},
+		MENU_ITEM
+			{
+			cascade = r_rom_patcher_plus_list_box_menu_pane4;
+			txt = STR_RomPatcherPlusListBoxView_35;
+			},
+		MENU_ITEM
+			{
+			cascade = r_rom_patcher_plus_list_box_menu_pane2;
+			txt = STR_RomPatcherPlusListBoxView_11;
+			},
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewDonateMenuItemCommand;
+			txt = STR_RomPatcherPlusListBoxView_6;
+			},
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewAbout_MenuItem1Command;
+			txt = STR_RomPatcherPlusListBoxView_15;
+			}
+		};
+	}
+RESOURCE MENU_PANE r_rom_patcher_plus_list_box_menu_pane2
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewDump_ROMMenuItemCommand;
+			txt = STR_RomPatcherPlusListBoxView_16;
+			},
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewDump_SuperPageMenuItemCommand;
+			txt = STR_RomPatcherPlusListBoxView_17;
+			},
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewSystem_InfoMenuItemCommand;
+			txt = STR_RomPatcherPlusListBoxView_18;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item1
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_4;
+			},
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_4;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item2
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_5;
+			},
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_5;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item3
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_7;
+			},
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_7;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item4
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_12;
+			},
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_12;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item5
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_13;
+			},
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_13;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item6
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_14;
+			},
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_14;
+			}
+		};
+	}
+
+
+
+RESOURCE DIALOG r_wait_dialog
+    {
+    flags = EAknWaitNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE
+                {
+                layout = EWaitLayout;
+                singular_label = "Wait Dialog";
+                animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+                };
+            }
+        };
+    }
+
+
+RESOURCE DIALOG r_progress_sendsms_wait
+    {
+    flags = EAknWaitNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_EMPTY;
+    items =
+        { 
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE
+                {
+                layout = EWaitLayout;
+                singular_label = "In Progress... Please Wait!";
+                plural_label   = "";
+                animation      = R_QGN_GRAF_WAIT_BAR_ANIM;
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_progress_dialog_wait
+    {
+    flags = EAknWaitNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE
+                {
+                layout = EWaitLayout;
+                singular_label = "Connecting...";
+                plural_label   = "";
+                animation      = R_QGN_GRAF_WAIT_BAR_ANIM;
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_progress_dialog_dumprom
+    {
+    flags = EAknProgressNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE
+                {
+                layout = EProgressLayout;
+                singular_label = "Dump ROM in Progress\nPlease Wait...";
+                };
+            }
+        };
+    }
+
+RESOURCE TBUF r_dump_completed  { buf="Dump Completed"; }
+RESOURCE TBUF r_error_line  { buf="%S\nPatching Error at Line: %d"; }
+RESOURCE TBUF r_error_leave { buf="%S\nPatching Error"; }
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item7
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_32;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item8
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_33;
+			}
+		};
+	}
+RESOURCE MENU_PANE r_rom_patcher_plus_list_box_menu_pane4
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewApplyMenuItem1Command;
+			txt = STR_RomPatcherPlusListBoxView_36;
+			},
+		MENU_ITEM
+			{
+			command = ERomPatcherPlusListBoxViewDisableMenuItemCommand;
+			txt = STR_RomPatcherPlusListBoxView_37;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item9
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_27;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item10
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_29;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item11
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_34;
+			}
+		};
+	}
+RESOURCE ARRAY r_rom_patcher_plus_list_box_listbox_item12
+	{
+	items =
+		{
+		LBUF
+			{
+			txt = STR_RomPatcherPlusListBoxView_38;
+			}
+		};
+	}
